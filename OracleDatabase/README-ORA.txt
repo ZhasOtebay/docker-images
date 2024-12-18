@@ -105,7 +105,7 @@ docker run -d --name oracle-db -p 1521:1521 -p 5500:5500 -p 2484:2484 \
 a751ae656249c4c912b1b2498f7ad46b39290a3f31a99477e94d19ced361e59a
 [oracle@dis-work-srv ~]$ docker ps
 CONTAINER ID   IMAGE                         COMMAND                  CREATED         STATUS                            PORTS                                                                                                                             NAMES
-a751ae656249   oracle/database:23.5.0-free   "/bin/bash -c $ORACL…"   7 seconds ago   Up 6 seconds (health: starting)   0.0.0.0:1521->1521/tcp, :::1521->1521/tcp, 0.0.0.0:2484->2484/tcp, :::2484->2484/tcp, 0.0.0.0:5500->5500/tcp, :::5500->5500/tcp   oracle-db                                                                                                                                                      tg-monitor-bot
+a751ae656249   oracle/database:23.5.0-free   "/bin/bash -c $ORACL…"   7 seconds ago   Up 6 seconds (health: starting)   0.0.0.0:1521->1521/tcp, :::1521->1521/tcp, 0.0.0.0:2484->2484/tcp, :::2484->2484/tcp, 0.0.0.0:5500->5500/tcp, :::5500->5500/tcp   oracle-db  
 Если хотим следить за процессом:
 [oracle@dis-work-srv ~]$ docker logs -f  a751ae656249
 .......
